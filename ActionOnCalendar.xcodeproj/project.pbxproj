@@ -22,6 +22,8 @@
 		CCB15C7C1915DFE800F10348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB15C5B1915DFE800F10348 /* UIKit.framework */; };
 		CCB15C841915DFE900F10348 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCB15C821915DFE900F10348 /* InfoPlist.strings */; };
 		CCB15C861915DFE900F10348 /* ActionOnCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB15C851915DFE900F10348 /* ActionOnCalendarTests.m */; };
+		CCB15C901915DFF800F10348 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB15C8F1915DFF800F10348 /* EventKit.framework */; };
+		CCB15C931915E09F00F10348 /* PooActionOnCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB15C921915E09F00F10348 /* PooActionOnCalendar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		CCB15C811915DFE900F10348 /* ActionOnCalendarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActionOnCalendarTests-Info.plist"; sourceTree = "<group>"; };
 		CCB15C831915DFE900F10348 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CCB15C851915DFE900F10348 /* ActionOnCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionOnCalendarTests.m; sourceTree = "<group>"; };
+		CCB15C8F1915DFF800F10348 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		CCB15C911915E09F00F10348 /* PooActionOnCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PooActionOnCalendar.h; sourceTree = "<group>"; };
+		CCB15C921915E09F00F10348 /* PooActionOnCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PooActionOnCalendar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB15C901915DFF800F10348 /* EventKit.framework in Frameworks */,
 				CCB15C5A1915DFE800F10348 /* CoreGraphics.framework in Frameworks */,
 				CCB15C5C1915DFE800F10348 /* UIKit.framework in Frameworks */,
 				CCB15C581915DFE800F10348 /* Foundation.framework in Frameworks */,
@@ -103,6 +109,7 @@
 		CCB15C561915DFE800F10348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCB15C8F1915DFF800F10348 /* EventKit.framework */,
 				CCB15C571915DFE800F10348 /* Foundation.framework */,
 				CCB15C591915DFE800F10348 /* CoreGraphics.framework */,
 				CCB15C5B1915DFE800F10348 /* UIKit.framework */,
@@ -122,6 +129,8 @@
 				CCB15C701915DFE800F10348 /* PooViewController.m */,
 				CCB15C721915DFE800F10348 /* Images.xcassets */,
 				CCB15C5E1915DFE800F10348 /* Supporting Files */,
+				CCB15C911915E09F00F10348 /* PooActionOnCalendar.h */,
+				CCB15C921915E09F00F10348 /* PooActionOnCalendar.m */,
 			);
 			path = ActionOnCalendar;
 			sourceTree = "<group>";
@@ -257,6 +266,7 @@
 				CCB15C641915DFE800F10348 /* main.m in Sources */,
 				CCB15C681915DFE800F10348 /* PooAppDelegate.m in Sources */,
 				CCB15C711915DFE800F10348 /* PooViewController.m in Sources */,
+				CCB15C931915E09F00F10348 /* PooActionOnCalendar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
