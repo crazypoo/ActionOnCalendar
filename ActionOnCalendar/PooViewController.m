@@ -9,7 +9,7 @@
 #import "PooViewController.h"
 #import "PooActionOnCalendar.h"
 
-@interface PooViewController ()<UIPickerViewDataSource,UIPickerViewDelegate>
+@interface PooViewController ()<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
 @property (nonatomic, retain) UITextField *textTitle;
 @property (nonatomic, retain) UITextField *textComent;
 @property (nonatomic, assign) NSInteger selectedIndex;
@@ -32,7 +32,7 @@
     self.textTitle.clearButtonMode            = UITextFieldViewModeWhileEditing;
     self.textTitle.returnKeyType              = UIReturnKeyDone;
     self.textTitle.textAlignment              = NSTextAlignmentLeft;
-//    self.textTitle.delegate                   = self;
+    self.textTitle.delegate                   = self;
     self.textTitle.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:self.textTitle];
     
@@ -43,7 +43,7 @@
     self.textComent.clearButtonMode            = UITextFieldViewModeWhileEditing;
     self.textComent.returnKeyType              = UIReturnKeyDone;
     self.textComent.textAlignment              = NSTextAlignmentLeft;
-    //    self.textTitle.delegate                   = self;
+    self.textComent.delegate                   = self;
     self.textComent.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.textComent];
     
@@ -54,6 +54,14 @@
     [self.view addSubview:timePicker];
     
 }
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.textComent resignFirstResponder];
+    [self.textTitle resignFirstResponder];
+    return YES;
+}
+
 -(IBAction)taptap:(id)sender
 {
     [self.textTitle resignFirstResponder];
